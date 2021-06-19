@@ -1,0 +1,46 @@
+<!-- register -->
+
+<!-- INheritence -->
+  
+  {% extends "layout.html" %}
+  {% block body %}
+  
+
+   <div class="container">
+    <h3 >Sorry!!😢😢 You haven't registered yet. Please register first.</h3>
+
+    <form action="/registration" method="POST">
+
+    
+    <div class="form-group">
+        <label for="name">Enter your name:</label>
+        <input type="name" class="form-control" id="name" name="name">
+      </div>
+
+
+      
+      <div class="mb-3">
+  <label for="email" class="form-label">Email Address</label>
+  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+</div>
+
+   
+    <div class="form-group">
+        <label for="phone">Enter your phone number:</label>
+        <input type="phone" class="form-control" id="phone" name="phone">
+      </div>
+
+
+   
+
+      <div class="form-group">
+        <label for="password">Enter a new password:</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+
+
+      <button class="btn btn-primary">Register here</button>
+    </form>
+  </div>
+
+  {% endblock %}

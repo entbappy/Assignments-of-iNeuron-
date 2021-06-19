@@ -1,0 +1,20 @@
+
+<!-- INheritence -->
+  
+  {% extends "layout.html" %}
+  {% block body %}
+  
+
+   <div class="container">
+    <h1 >Welcome to the portal!! 😀😀</h1>
+    <img class="gif" src="{{ url_for('static', filename='welcome.gif') }}" alt="SPAM Image">
+
+    <form action="/" method="GET">
+
+
+      <button class="btn btn-dark">Go Home</button>
+     
+    </form>
+  </div>
+
+  {% endblock %}
